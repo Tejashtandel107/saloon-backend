@@ -12,7 +12,6 @@ const createAdmin = require("./seed");
 const app = express();
 connectDB();
 app.use(express.json());
-app.use(helmet());
 app.use(cors());
 app.use(compression());
 app.use(routes);

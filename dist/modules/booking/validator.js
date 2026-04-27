@@ -5,10 +5,10 @@ const addBookingValidator = Joi.object({
     serviceId: Joi.string().length(24).hex().required()
         .required()
         .messages({
-        "string.base": "Product ID must be a string",
-        "string.length": "Invalid Product ID",
-        "string.hex": "Invalid Product ID",
-        "any.required": "Product ID is required",
+        "string.base": "Service ID must be a string",
+        "string.length": "Invalid Service ID",
+        "string.hex": "Invalid Service ID",
+        "any.required": "Service ID is required",
     }),
     name: Joi.string()
         .min(2)

@@ -58,8 +58,10 @@ class BookingService {
     }
     // Create Booking
     async createBooking(data) {
-        const { name, email, phone, bookingDateTime } = data;
+        const { serviceId, name, email, phone, bookingDateTime } = data;
+        console.log(bookingDateTime);
         const booking = await Booking.create(data);
+        console.log(data);
         // // Admin Email
         // emailQueue.add(() =>
         //     this.sendEmail(process.env.ADMIN_EMAIL!,"New Slot Booked","adminNotification",
