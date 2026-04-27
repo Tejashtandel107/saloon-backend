@@ -1,0 +1,9 @@
+node_modules/
+.env
+.env.*
+build/
+coverage/
+logs/
+*.log
+README.md
+.vscode

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Slot Booking Confirmation</title>
+    <style>
+        body { font-family: Arial, sans-serif; background: #f9f9f9; padding: 20px; }
+        .container { max-width: 600px; margin: auto; background: #fff; padding: 30px; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+        p { line-height: 1.6; }
+        .slot { font-weight: bold; color: #333; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="https://thewebmax.org/saloni/images/logo-dark.png" alt="Salon Logo" class="logo">
+        <h2>Hi {{name}},</h2>
+        <p>Thank you for booking a slot with us!</p>
+        <p>Your booking details:</p>
+        <ul>
+            <li><strong>Email:</strong> {{email}}</li>
+            <li><strong>Slot:</strong> <span class="slot">{{slot}}</span></li>
+        </ul>
+        <p>We look forward to seeing you.</p>
+        <p>Best Regards,<br>Salon App</p>
+    </div>
+</body>
+</html>
