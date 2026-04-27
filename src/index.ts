@@ -24,6 +24,6 @@ app.use(errorHandler);
 const PORT = process.env.PORT || 3000;
 
 app.listen(PORT, () => {
-  // createAdmin();
+  createAdmin();
   console.log(`${process.env.APP_NAME} running on port ${PORT}`);
 });
